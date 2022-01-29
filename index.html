@@ -8,14 +8,13 @@
   
   <title>Frontend Mentor | [Blogr]</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    body{
-      background-color: rgb(57, 89, 179);
-    }
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <!-- Font Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 
@@ -26,12 +25,17 @@
         <img src="./images/logo.svg" alt="logo">
       </div>
 
-      <!-- ul -->
-      <div class="header__container">
-          <ul class="header__nav-ul">
+      <!-- display none (< 720px) -->
+      <div class="header__container" id="nav-movil">
+        <!-- ul -->
+          <ul class="header__nav-ul" id="nav-ul">
           <!-- Product -->
           <li class="header__nav-li">
-            <span class="header__nav-span">Product</span>
+            <div class="header__li-box"> 
+              <span class="header__nav-span">Product</span>
+              <img src="./images/icon-arrow-light.svg" class="header__arrow no-movil">
+              <img src="./images/icon-arrow-dark.svg" class="header__arrow no-desktop">
+            </div>
             <div class="header__nav-subbox">
               <span class="header__nav-subspan">Overview</span>
               <span class="header__nav-subspan">Pricing</span>
@@ -42,7 +46,11 @@
           </li>
           <!-- Company -->
           <li class="header__nav-li">
-            <span class="header__nav-span">Company</span>
+            <div class="header__li-box"> 
+              <span class="header__nav-span">Company</span>
+              <img src="./images/icon-arrow-light.svg" class="header__arrow no-movil">
+              <img src="./images/icon-arrow-dark.svg" class="header__arrow no-desktop">
+            </div>
             <div class="header__nav-subbox">
               <span class="header__nav-subspan">About</span>
               <span class="header__nav-subspan">Team</span>
@@ -52,7 +60,11 @@
           </li>
           <!--  Connect -->
           <li class="header__nav-li">
-            <span class="header__nav-span">Connect</span>
+            <div class="header__li-box"> 
+              <span class="header__nav-span">Connect</span>
+              <img src="./images/icon-arrow-light.svg" class="header__arrow no-movil">
+              <img src="./images/icon-arrow-dark.svg" class="header__arrow no-desktop">
+            </div>
             <div class="header__nav-subbox">
               <span class="header__nav-subspan">Contact</span>
               <span class="header__nav-subspan">Newsletter</span>
@@ -61,6 +73,8 @@
           </li>
         </ul>
         
+        <hr class="header__hr no-desktop">
+
         <!-- buttons -->
         <div class="header__buttons">
           <button class="button button-1" >Login</button>
@@ -69,9 +83,8 @@
       </div>
       
       <!-- Icons -->
-      <div class="header__icon">
+      <div class="header__icon no-desktop" id="logo-movil">
         <img src="./images/icon-hamburger.svg">
-        <img src="./images/icon-close.svg">
       </div>
     </nav>
 
@@ -184,5 +197,8 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+
+  <!-- JAVASCRIPT -->
+  <script src="./js/script.js"></script>
 </body>
 </html>
