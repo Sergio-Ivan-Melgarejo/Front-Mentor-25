@@ -1,0 +1,131 @@
+.header{
+    background: url(../images/bg-pattern-intro-mobile.svg), linear-gradient( var(--Very-light-red) 20%, var(--Light-red) 50%);
+    background-position: 35% 65%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    border-bottom-left-radius: 100px;
+    padding: 2em 1em;
+}
+
+/* * NAV ___________________________ */
+
+.header__nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.header__nav-ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+
+.nav__logo-container{
+    margin-right: 50px;
+}
+
+.header__nav-li{
+    width: 100%;
+    font-family: var(--font-family-1);
+}
+
+.header__nav-span{
+    font-weight: 600;
+    color: var(--Very-dark-black-blue);
+    padding: 0 .2em;
+    transition: color 350ms ease-in-out, transform 350ms;
+    display: inline-block;
+}
+
+.header__arrow{
+    transition: transform 350ms;
+}
+
+.header__li-box{
+    padding: .5em;
+    cursor: pointer;
+}
+
+.header__li-box:hover > .header__nav-span{
+    color: var(--Very-dark-grayish-blue);
+    transform: scale(1.05);
+}
+
+.header__li-box:hover > .header__arrow{
+    transform: scale(1.05) rotate(-180deg);
+}
+
+.header__nav-li.select .header__nav-span{
+    color: var(--Very-dark-grayish-blue);
+}
+
+.header__nav-li.select .header__nav-span:hover{
+    color: var(--Very-dark-black-blue);
+}
+
+.header__nav-li.select .header__arrow{
+    transform: rotate(-180deg);
+}
+
+.header__nav-li.select .header__li-box:hover > .header__arrow{
+    transform: scale(1.05) rotate(0deg);
+}
+
+.header__nav-subbox{
+    background-color:  #efeff1;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.header__nav-li.select .header__nav-subbox{
+    padding: .5em;
+    max-height: none;
+}
+
+.header__nav-subspan{
+    font-weight: 300;
+    color: var(--Very-dark-grayish-blue);
+    padding: .5em;
+    width: 100%;
+    cursor: pointer;
+    transform: color 350ms, transform 350ms;
+}
+
+.header__nav-subspan:hover{
+    color: var(--Very-dark-black-blue);
+    transform: scale(1.05);
+}
+
+/* * ___________________________ */
+
+.header__h1{
+    font-family: var(--font-family-2);
+    font-weight: 500;
+    font-size: clamp(2em,4vmax,4.5em);
+    color: var(--White);
+    text-align: center;
+    margin-top: 120px;
+    padding: 0 20px;
+}
+
+.header__p{
+    text-align: center;
+    font-family: var(--font-family-1);
+    color: var(--Grayish-blue);
+    padding: 0 40px;
+}
+
+.header__buttons.buttons-h{
+    flex-direction: row;
+    gap: 1em;
+    justify-content: center;
+    margin: 40px 0;
+}

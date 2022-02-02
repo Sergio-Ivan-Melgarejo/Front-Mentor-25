@@ -1,0 +1,41 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    Font-size: 16px;
+    margin: 0;
+    min-width: 375px;
+}
+
+.max-width{
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+/* * button ___________________________ */
+
+.button{
+    width: 120px;
+    padding: 1em;
+    border-radius: 50px;
+    border: none;
+    font-size: bolder;
+    font-family: var(--font-family-1);
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: color 350ms ease-in-out, background-color 350ms ease-in-out, border-color 350ms ease-in-out;
+}
+
+.button-3{
+    background-color: transparent;
+    color: var(--White);
+    border-color: var(--White);
+}
+.button-3:hover{
+    border-color: var(--White);
+    color: var(--Light-red);
+    background-color: var(--White);
+}

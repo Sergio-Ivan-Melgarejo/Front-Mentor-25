@@ -1,0 +1,72 @@
+/* * sections ___________________________ */
+
+.main__h2{
+    text-align: center;
+    color: var(--Very-dark-blue);
+    font-family: var(--font-family-1);
+    margin-bottom: 50px;
+}
+
+.main__section{
+    padding: 100px 0;
+    background-repeat: no-repeat;
+}
+
+.section-1{
+}
+
+.secttion__grid{
+    display: grid;
+    grid-template-rows: 350px 1fr;
+}
+
+.section__grid-img{
+
+}
+
+.section__img-1,.section__img-2,.section__img-3{
+    height: 100%;
+    background-image: url(../images/illustration-editor-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.section__grid-text{
+    order: 2;
+    padding: 1em 3em;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+.section__container{
+    margin-bottom: 50px;
+}
+
+.section__h3{
+    font-family: var(--font-family-1);
+    color: var(--Very-dark-blue);
+}
+
+.section__p{
+    color: var(--Grayish-blue);
+}
+
+/* section-2 */
+
+.section-2{
+    background-size: 100% 100%;
+    background-position: center -200px;
+    background-repeat: no-repeat;
+    border-bottom-left-radius: 100px;
+    border-top-right-radius: 100px;
+    background: linear-gradient(to top, var(--Very-dark-desaturated-blue) 50%, var(--Very-dark-gray-blue) 100%);
+}
+
+.section__img-2{
+    background-image: url(../images/illustration-phones.svg);
+    background-size: 100% 100%;
+}
+
+.section__img-3{
+    background-image: url(../images/illustration-laptop-mobile.svg);
+}

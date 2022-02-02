@@ -6,10 +6,9 @@ logoMovil.addEventListener("click",()=>{
     navMovil.classList.toggle("select");
     logoMovil.classList.toggle("select");
     if(logoMovil.classList.value.includes("select")) {
-        logoMovil.children[0].src = "./images/icon-hamburger.svg";
+        logoMovil.children[0].src = "./images/icon-close.svg";
     }
-    else logoMovil.children[0].src = "./images/icon-close.svg";
-    console.log(logoMovil.classList.value.includes("select"))
+    else logoMovil.children[0].src = "./images/icon-hamburger.svg";
 })
 
 navUl.addEventListener("click",(e)=>{
