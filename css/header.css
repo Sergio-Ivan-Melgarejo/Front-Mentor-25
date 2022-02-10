@@ -56,10 +56,6 @@
     transform: scale(1.05);
 }
 
-.header__li-box:hover > .header__arrow{
-    transform: scale(1.05) rotate(-180deg);
-}
-
 .header__nav-li.select .header__nav-span{
     color: var(--Very-dark-grayish-blue);
 }
@@ -70,10 +66,6 @@
 
 .header__nav-li.select .header__arrow{
     transform: rotate(-180deg);
-}
-
-.header__nav-li.select .header__li-box:hover > .header__arrow{
-    transform: scale(1.05) rotate(0deg);
 }
 
 .header__nav-subbox{
