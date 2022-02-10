@@ -1,4 +1,9 @@
-
-
-.attribution { font-size: 11px; text-align: center; }
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    opacity: .5;
+}
 .attribution a { color: hsl(228, 45%, 44%); }
